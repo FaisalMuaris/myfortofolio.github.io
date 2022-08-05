@@ -105,5 +105,5 @@ section {
 }
 
 .handphone-box:hover .handphone-img {
-  transform: translate3d(-50%, -50%, 100px) rotate(10deg) scale(1.2);
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }

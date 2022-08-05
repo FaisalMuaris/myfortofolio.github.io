@@ -29,7 +29,7 @@ section {
 }
 
 .handphone-box::before {
-  content: "MY";
+  content: "";
   position: absolute;
   color: #fff;
   font-size: 6em;
@@ -47,7 +47,7 @@ section {
 }
 
 .handphone-box::after {
-  content: "HANDPHONE";
+  content: "";
   position: absolute;
   color: #fff;
   font-size: 3em;

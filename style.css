@@ -18,3 +18,92 @@ section {
 #galery .row > * {
   padding: 0;
 }
+
+/* My Handphone section */
+.handphone-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.handphone-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-style: italic;
+  font-weight: bold;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.handphone-box:hover::before {
+  opacity: 0.2;
+}
+
+.handphone-box::after {
+  content: "HANDPHONE";
+  position: absolute;
+  color: #fff;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: bold;
+  top: 380px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.handphone-box:hover::after {
+  opacity: 0.2;
+}
+
+.handphone-name {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.handphone-box:hover .handphone-name {
+  top: 18px;
+  opacity: 1;
+}
+
+.handphone-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 101px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.handphone-box:hover .handphone-detail-button {
+  opacity: 1;
+  bottom: 10px;
+}
+
+.handphone-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 400px;
+  transition: 0.5s;
+}
+
+.handphone-box:hover .handphone-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(10deg) scale(1.2);
+}
